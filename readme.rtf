@@ -1,0 +1,138 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier-Bold;\f1\fmodern\fcharset0 Courier;\f2\fmodern\fcharset0 Courier-Oblique;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\vieww12000\viewh15440\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs24 \cf0 Credit Risk Assessment Project
+\f1\b0 \
+\
+\ul Project Overview\ulnone \
+This project demonstrates how to use machine learning techniques to predict credit risk using the German Credit Dataset. It serves as a guide for intermediate-level data science learners and practitioners. The project utilizes the Random Forest Classifier, a powerful ensemble method for binary classification tasks, to predict whether an applicant is a high-risk or low-risk credit applicant based on their profile attributes, such as age, savings accounts, housing, and credit amount.\
+\
+\ul Objectives\ulnone \
+The main objective of this project is to build a machine learning model that can predict credit risk (high-risk or low-risk) based on a set of features in the dataset. By building this model, you will gain hands-on experience in data preprocessing, feature engineering, model training, and evaluation. Moreover, the project showcases visualizations that provide deeper insights into the data and model results.\
+\
+\ul Dataset\ulnone \
+The dataset used is the German Credit Dataset, which includes 1,000 examples of credit applicants with 20 attributes describing each applicant's financial situation and personal characteristics. The target variable, 'Risk', is a binary value, where 1 represents a high-risk applicant, and 0 represents a low-risk applicant.\
+\
+Key features in the dataset:\
+\pard\pardeftab720\li360\ri-340\partightenfactor0
+\cf0 Age, Credit amount, Duration, Housing, Saving accounts, Checking account, Sex, Purpose, Risk (target variable)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\ul Project Steps\ulnone \
+The following steps were taken to build the project:\
+\
+\pard\pardeftab720\li360\ri-340\partightenfactor0
+\cf0 1. 
+\f0\b Data Preprocessing
+\f1\b0 : Cleaning the dataset by handling missing values and removing unnecessary columns.\
+2. 
+\f0\b Feature Engineering
+\f1\b0 : Creating new features from existing data to enhance the model's ability to detect patterns (e.g., binning age into categories, creating credit amount quartiles).\
+3. 
+\f0\b One-Hot Encoding
+\f1\b0 : Converting categorical variables like 'Housing', 'Purpose', and 'Saving accounts' into numerical format for machine learning purposes.\
+4. 
+\f0\b Defining Target Variable
+\f1\b0 : Defining the target variable 'Risk' as high-risk (1) or low-risk (0), based on a rule that combines 'Credit amount' and 'Duration'.\
+5. 
+\f0\b Train-Test Split
+\f1\b0 : Splitting the data into training and testing sets to evaluate model performance.\
+6. 
+\f0\b Scaling
+\f1\b0 : Normalizing numerical features (Age, Credit amount, Duration) using 
+\f2\i StandardScaler
+\f1\i0 for improved model performance.\
+7. 
+\f0\b Model Training
+\f1\b0 : Using the 
+\f0\b Random Forest Classifier
+\f1\b0 to predict credit risk.\
+8. 
+\f0\b Model Evaluation
+\f1\b0 : Evaluating model accuracy and performance using metrics such as accuracy, confusion matrix, and classification report.\
+9. 
+\f0\b Visualizations
+\f1\b0 : Generating various visualizations to help understand the data and results better.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\ul Model Used\ulnone \
+The 
+\f0\b Random Forest Classifier
+\f1\b0 is an ensemble learning method commonly used for binary classification tasks like credit risk assessment. Random Forest works by constructing multiple decision trees and averaging their predictions to reduce variance and improve overall accuracy. It is robust against overfitting, especially when dealing with high-dimensional datasets like this one.\
+\
+Key benefits of using Random Forest for this project include:\
+\
+\pard\pardeftab720\li360\ri-340\partightenfactor0
+\cf0 - Handles both categorical and numerical features well.\
+- Provides feature importance scores to show which variables contribute most to the prediction.\
+- Resistant to overfitting, making it a stable and reliable model.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\ul Model Evaluation Metrics\ulnone \
+After training the Random Forest model, the following metrics were used to evaluate its performance:\
+\pard\pardeftab720\li360\ri-340\partightenfactor0
+\cf0 - 
+\f0\b Accuracy
+\f1\b0 : Measures the overall correctness of the model\'e2\'80\'99s predictions.\
+- 
+\f0\b Confusion Matrix
+\f1\b0 : Visualizes the number of true positives, true negatives, false positives, and false negatives.\
+- 
+\f0\b Classification Report
+\f1\b0 : Provides detailed performance metrics such as precision, recall, and F1-score for both classes (high-risk and low-risk).\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+The model achieved strong performance in terms of accuracy, with a detailed breakdown available through the classification report.\
+\
+\ul Visualizations\ulnone \
+To make sense of the data and model results, the following visualizations were used in this project:\
+\
+\pard\pardeftab720\li360\ri-340\partightenfactor0
+\cf0 - 
+\f0\b Pie Chart
+\f1\b0 : Displays the distribution of high-risk and low-risk applicants.\
+- 
+\f0\b Bar Plot
+\f1\b0 : Visualizes the count of high-risk vs low-risk applicants.\
+- 
+\f0\b Correlation Heatmap
+\f1\b0 : Shows correlations between the features to understand relationships and dependencies.\
+- 
+\f0\b Confusion Matrix Heatmap
+\f1\b0 : Provides a visual representation of the confusion matrix to assess the model\'e2\'80\'99s predictive performance.\
+- 
+\f0\b Feature Importance Plot
+\f1\b0 : Displays the importance of each feature in contributing to the prediction of credit risk.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+These visualizations not only help in understanding the data distribution but also provide insights into the model's performance and decision-making process.\
+\
+\ul Requirements\ulnone \
+The following Python libraries are required to run this project:\
+\pard\pardeftab720\li360\ri-340\partightenfactor0
+\cf0 - pandas\
+- numpy\
+- scikit-learn\
+- seaborn\
+- matplotlib\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\ul Conclusion\ulnone \
+This project demonstrates the process of building a credit risk assessment model using machine learning techniques, specifically the Random Forest Classifier. The project highlights the importance of data preprocessing, feature engineering, model evaluation, and visualization to gain insights into the data and model performance.\
+\
+By following this project, you will gain hands-on experience in working with real-world datasets, building predictive models, and evaluating them using various performance metrics.\
+\
+If you have any questions or suggestions, feel free to reach out to me at shyam9214563063@gmail.com.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs20 \cf0 \
+}
